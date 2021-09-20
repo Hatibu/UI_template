@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+@layer components{
+    .smScreen-Activenav{
+        @apply lg:flex lg:items-center lg:w-auto lg:pt-0 pt-6 w-full flex-grow hidden
+    }
+    .smScreen-inactiveNav{
+        @apply lg:flex lg:items-center lg:w-auto lg:pt-0 pt-6 w-full flex-grow 
+    }
+}
+@tailwind utilities;
