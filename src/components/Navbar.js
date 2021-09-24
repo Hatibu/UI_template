@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
-import { FaBars,FaTimes } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import { VscClose } from "react-icons/vsc";
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
     return (
         <div className="navbar">
               <nav className="flex items-center justify-between flex-wrap bg-indigo-700 p-3 fixed top-0 z-10 w-full">
